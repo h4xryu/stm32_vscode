@@ -1,0 +1,5 @@
+C:/Users/zwing/STM32F/build/CMakeFiles/stm32_fw.elf.dir
+C:/Users/zwing/STM32F/build/CMakeFiles/package.dir
+C:/Users/zwing/STM32F/build/CMakeFiles/package_source.dir
+C:/Users/zwing/STM32F/build/CMakeFiles/edit_cache.dir
+C:/Users/zwing/STM32F/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,9 @@
+{
+    "cmake.configureArgs": [
+        "-DARM_TOOLCHAIN_DIR=C:/tools/arm-gnu-toolchain-13.2.Rel1-mingw-w64-i686-arm-none-eabi/bin",
+        "-DCMAKE_MAKE_PROGRAM=C:/tools/build_tools/xpack-windows-build-tools-4.2.1-2/bin/make.exe "
+    ],
+    "cmake.generator": "Unix Makefiles",
+    "cortex-debug.armToolchainPath": "C:/tools/arm-gnu-toolchain-13.2.Rel1-mingw-w64-i686-arm-none-eabi/bin",
+    "cmake.sourceDirectory": "C:/Users/zwing/STM32F"
+}
