@@ -1,15 +1,36 @@
 {
+    "version": "0.2.0",
     "configurations": [
         {
-            "cwd": "${workspaceRoot}",
+            "name": "Debug with OpenOCD",
             "executable": "./build/stm32_fw.elf",
-            "name": "Debug with ST-Link",
-            "request": "launch",
             "type": "cortex-debug",
-            "showDevDebugOutput": "none",
-            "servertype": "stlink",
-            "svdFile": "./tools/STM32F103xx.svd"
+            "request": "launch",
+            "servertype": "openocd",
+            "device": "STM32F103C8",
+            "interface": "swd",
+            "serialNumber": "B55B5A1A0000000051C9F001",
+            "runToMain": true,
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "config": {
+                "target/stm32f1x.cfg": {
+                    "adapter_khz": 8000 // 원하는 속도로 변경
+                }
+            },
+            "showDevDebugOutput": "vscode",
+            "postLaunchCommands": [
+                "monitor reset halt",
+                "monitor arm semihosting enable"
+            ],
+            "svdFile": "tools/STM32F103xx.svd",
+            "autorun": [
+                "target sim",
+                "load"
+            ]
         }
-    
     ]
+    
 }

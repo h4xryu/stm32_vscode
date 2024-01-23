@@ -5,5 +5,11 @@
     ],
     "cmake.generator": "Unix Makefiles",
     "cortex-debug.armToolchainPath": "C:/tools/arm-gnu-toolchain-13.2.Rel1-mingw-w64-i686-arm-none-eabi/bin",
+    "cortex-debug.openocdPath": "C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.openocd.win32_2.3.0.202305091550/tools/bin/openocd.exe",
+    "cortex-debug.openOCDConfigs": [
+    "c:/Users/zwing/.vscode/extensions/marus25.cortex-debug-1.12.1/support/openocd-helpers.tcl",
+    "./tools/stlink-v2.cfg",
+    "./tools/stm32f1x.cfg"
+],
     "cmake.sourceDirectory": "C:/Users/zwing/STM32F"
 }
